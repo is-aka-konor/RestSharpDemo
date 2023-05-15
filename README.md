@@ -14,9 +14,28 @@ To use the RestSharp Demo application, follow these steps:
 
 ## Usage
 
-To run the RestSharp Demo application, follow these steps:
+This demo project is using .Net 6. Note: Make sure you have the [.NET SDK installed](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) on your machine before using the dotnet CLI commands. You can download the latest version of the .NET SDK from the official Microsoft website. To run the RestSharp Demo application, follow these steps:
 
-    Open the program [via command line or GUI interface].
+1. Restore the dependencies by navigating to the project's root directory in the command line and executing the following command:
+
+    `dotnet restore`
+
+This command will download and restore all the necessary packages and dependencies required by the application.
+
+2. Build the application by running the following command:
+
+    `dotnet build`
+
+This command will compile the source code and generate the executable files.
+
+3. Once the build is successful, you can run the application using the following command:
+
+    `dotnet run`
+
+This command will execute the application, and you will see the output in the command line or terminal.
+
+### Application flow
+
     The program will read the authentication configuration from the appsettings.json file.
     The program will create an authenticator object based on the provided identity configuration.
     The program will create a RestSharp client with the specified API endpoint and authenticator.
